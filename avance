@@ -1,0 +1,115 @@
+HTML:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/f72c535c74.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.Css">
+    <title>Preguntas</title>
+</head>
+<body>
+    
+        <div class="main_box">
+            <!--Pantalla donde aparecen los mensajes-->
+            <div class="main_screen_text">
+                    <div class="question">
+                    </div>
+                    <div class="answer">
+                    </div>
+            </div>
+            <!--Menu interactivo para mandar mensajes-->
+            <div class="interactive_media">
+                <input type="text" class="decorative_button1">
+                <button class="decorative_button2"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+        
+</body>
+</html>
+CSS:
+body {
+    background: rgb(49, 49, 49);
+    margin: 0;
+}
+
+.main_box {
+    background: rgb(83, 83, 83);
+    width: 70%;
+    height: 900px;
+    margin: 0 auto;
+    position: relative;
+    top: 15px;
+}
+
+.decorative_button1 {
+    padding: 3px;
+    background: gray;
+    color: white;
+    border-radius: 10px;
+    border: solid 1px black;
+    transition: 0.5s;
+    width: 25%;
+}
+.decorative_button1:hover {
+    background-color: rgb(163, 163, 163);
+    color: black;
+    cursor: text;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.decorative_button2 {
+    padding: 3px;
+    background: gray;
+    color: white;
+    border-radius: 10px;
+    border: solid 1px black;
+    transition: 0.5s;
+    width: 3%;
+}
+.decorative_button2:hover {
+    background-color: rgb(163, 163, 163);
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.interactive_media {
+    width: 100%;
+    height: 3%;
+    background: rgb(97, 97, 97);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.main_screen_text {
+    width: 80%;
+    height: 100%;
+    background: rgb(37, 37, 37);
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+}
+
+.question {
+    width: 25%;
+    height: fit-content;
+    background: rgb(110, 209, 255);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.answer {
+    width: 25%;
+    height: fit-content;
+    background: rgb(255, 64, 64);
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
